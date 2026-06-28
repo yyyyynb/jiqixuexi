@@ -185,7 +185,7 @@ with tab3:
         with st.spinner("出题中…"):
             try:
                 st.session_state["exam_qs"] = exam_mod.generate_exam(
-                    int(n_q), seed=int(seed), use_llm=False)
+                    int(n_q), seed=int(seed))
                 if not st.session_state["exam_qs"]:
                     st.warning("出题结果为空，请检查 data/knowledge_base.csv 是否存在且有效。")
             except Exception as e:

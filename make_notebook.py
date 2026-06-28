@@ -91,7 +91,7 @@ print("回答：\\n", ans)""")
 
 md("""## 6. 模拟试卷生成与评分演示（进阶③）""")
 code("""import exam
-qs = exam.generate_exam(n=3, use_llm=False)   # 离线模板出题
+qs = exam.generate_exam(n=3)   # 离线模板出题
 for i, q in enumerate(qs, 1):
     print(f"[{i}] ({q['type']}/{q['category']}) {q['question'][:50]}... 答案={q['answer']}")
 score, total, details = exam.grade(qs, [q['answer'] for q in qs])  # 全答对演示

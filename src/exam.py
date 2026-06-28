@@ -48,7 +48,7 @@ def _make_true_false(row, rng):
     }
 
 
-def generate_exam(n: int = 5, seed: int = 42, use_llm: bool = False):
+def generate_exam(n: int = 5, seed: int = 42):
     """
     生成一份含 n 道题的试卷。
     每道题单独 try-except 保护，一题出错跳过不影响其他题。
@@ -115,7 +115,7 @@ def grade(questions, user_answers):
 
 
 if __name__ == "__main__":
-    qs = generate_exam(n=3, use_llm=False)
+    qs = generate_exam(n=3)
     for i, q in enumerate(qs, 1):
         print(f"[{i}] ({q['type']}/{q['category']}) {q['question']}")
         print(f"    选项：{q['options']}  答案：{q['answer']}")
