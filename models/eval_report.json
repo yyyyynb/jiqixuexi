@@ -1,0 +1,48 @@
+{
+  "朴素贝叶斯": {
+    "best_params": {
+      "clf__alpha": "0.01"
+    },
+    "metrics": {
+      "准确率": 0.7222,
+      "精确率(macro)": 0.7324,
+      "召回率(macro)": 0.7346,
+      "F1(macro)": 0.7204,
+      "AUC(macro-ovr)": 0.9258
+    },
+    "confusion_png": "confusion_朴素贝叶斯.png",
+    "roc_png": "roc_朴素贝叶斯.png"
+  },
+  "决策树": {
+    "best_params": {
+      "clf__max_depth": "20",
+      "clf__min_samples_split": "2"
+    },
+    "metrics": {
+      "准确率": 0.4444,
+      "精确率(macro)": 0.4118,
+      "召回率(macro)": 0.4551,
+      "F1(macro)": 0.4236,
+      "AUC(macro-ovr)": 0.6721
+    },
+    "confusion_png": "confusion_决策树.png",
+    "roc_png": "roc_决策树.png"
+  },
+  "随机森林": {
+    "best_params": {
+      "clf__max_depth": "None",
+      "clf__n_estimators": "200"
+    },
+    "metrics": {
+      "准确率": 0.6111,
+      "精确率(macro)": 0.6145,
+      "召回率(macro)": 0.6133,
+      "F1(macro)": 0.606,
+      "AUC(macro-ovr)": 0.9221
+    },
+    "confusion_png": "confusion_随机森林.png",
+    "roc_png": "roc_随机森林.png"
+  },
+  "_best_model": "朴素贝叶斯",
+  "_summary": "最优模型按测试集 F1(macro) 选取"
+}

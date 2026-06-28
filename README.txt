@@ -1,0 +1,1 @@
+These are reconstructed placeholder scripts. The original Artifact contents were not present in the exported conversations, so exact recovery is impossible from the export alone.

@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+.idea/
+.claude/
+data/_uploaded.pdf
+data/mistakes.csv
+*.zip
+jiqixuexi_recovered/
+jiqixuexi_recovered.zip
