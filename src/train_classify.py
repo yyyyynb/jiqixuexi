@@ -41,8 +41,11 @@ from text_utils import tokenize
 
 warnings.filterwarnings("ignore")
 
-# 中文字体，防止图表中文乱码
-plt.rcParams["font.sans-serif"] = ["SimHei", "Microsoft YaHei", "DejaVu Sans"]
+# 中文字体（跨平台：Linux Streamlit Cloud + Windows 本地）
+plt.rcParams["font.sans-serif"] = [
+    "WenQuanYi Micro Hei", "Noto Sans CJK SC",
+    "SimHei", "Microsoft YaHei", "DejaVu Sans",
+]
 plt.rcParams["axes.unicode_minus"] = False
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

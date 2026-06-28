@@ -16,7 +16,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-plt.rcParams["font.sans-serif"] = ["SimHei", "Microsoft YaHei", "DejaVu Sans"]
+plt.rcParams["font.sans-serif"] = [
+    "WenQuanYi Micro Hei", "Noto Sans CJK SC",
+    "SimHei", "Microsoft YaHei", "DejaVu Sans",
+]
 plt.rcParams["axes.unicode_minus"] = False
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
